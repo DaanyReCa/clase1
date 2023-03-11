@@ -1,1 +1,2 @@
-console.log("jss");
+const app =require('./src/index')
+app()
