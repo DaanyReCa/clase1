@@ -3,10 +3,19 @@ const http = require("http")
 const HOST ="localhost"
 const PORT =8000
 
+const writeHTMLresponse =(res, htmlcode) =>{
+    res.setHeader("Content-Type", "text/html")
+    res.writeHead(200)
+    res.end(htmlcode)-
+}
+
+const products = ¨[
+    
+]
+
 const server = http.createServer(
     (req, res) => {
-        res.end("este es mi primer servidor en node")
-    });
+        writeHTMLresponse(res ,`<h1> codigo html</h1>`)    });
 
 
         server.listen(PORT, HOST,() => {
