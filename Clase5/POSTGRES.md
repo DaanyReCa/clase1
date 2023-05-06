@@ -108,3 +108,23 @@ Elimina un registro de la tabla `productos`:
 DELETE FROM productos
 WHERE id = 2;
 ```
+
+## Nuevas Consultas "avanzadas"
+
+```
+SELECT * FROM productos ORDER BY precio ASC;
+
+SELECT * FROM productos ORDER BY precio, INVENTARIO ASC;
+
+SELECT * FROM productos ORDER BY INVENTARIO, precio ASC;
+
+
+SELECT * FROM productos 
+WHERE INVENTARIO > 0
+AND precio > 6
+ORDER BY precio ASC
+OFFSET 2
+LIMIT 2;
+```
+
+eso es todo, móntelo
