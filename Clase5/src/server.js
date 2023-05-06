@@ -2,10 +2,11 @@ require('dotenv').config()
 
 const express = require("express")
 const mongoose = require("mongoose");
+const routes = require("./routes")
 
 const port = process.env.PORT;
-const app = express();+
-
+const app = express();
+app.use("",routes)
 const start = async () => {
     try{
         //codigo para conectar

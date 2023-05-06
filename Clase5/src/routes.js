@@ -1,12 +1,14 @@
-const{router} = require("express");
-const {product} = require 
+const{Router} = require("express");
+const {Product} = require ("./models")
 const routes = new Router();
 
 routes.get("/health", (_,res) => res.send("check"))
 
 const BASE ="/api/v1/products";
 routes.get(BASE, async (req, res) => {
-    const products= await product.find();
-    res.jason(products);
+    const products= await Product.find();
+    res.json(products);
 
 })
+
+module.exports = routes;

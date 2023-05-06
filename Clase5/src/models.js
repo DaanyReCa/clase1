@@ -8,6 +8,6 @@ const ProductsSchema = mongoose.Schema ({
     category: {type: String, required: true},
 })
 
-exports.Products = mongoose.model("products", ProductsSchema);
+exports.Product = mongoose.model("products", ProductsSchema);
 
 
