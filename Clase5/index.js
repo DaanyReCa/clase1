@@ -1,1 +1,2 @@
-require('./src/server');
+//require('./src/server');
+require("./Clase1/index")
