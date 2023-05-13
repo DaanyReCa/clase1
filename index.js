@@ -1,1 +1,1 @@
-require('./Clase1');
+require('./Clase2');
